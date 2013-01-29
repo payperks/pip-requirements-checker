@@ -76,7 +76,15 @@ do
   fi
 done
 
-
+# Try to guess a $TMPDIR if none is specified
+if [ "$TMPDIR" = '' ]; then
+  if [ -d '/tmp' ] && [ -w '/tmp' ]; then
+    TMPDIR=/tmp
+  else
+    echo "No \$TMPDIR to place backup in; can't continue"
+    exit 1
+  fi
+fi
 
 
 # =====================================================================
