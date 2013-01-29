@@ -22,7 +22,7 @@ function print_help {
   echo "   -b <branch>   - use alternate branch; default is master"
   echo "   -h            - this help"
   echo
-  echo "Example: $0 -b master git@github.com:payperks/py-alex-req-project.git"
+  echo "Example: $0 -b master git@github.com:payperks/pip-requirements-checker.git"
   echo
 
 }
@@ -74,7 +74,7 @@ done
 # =====================================================================
 #  Fetch ourselves a copy of the code
 
-CODEDIR=`mktemp -d "$TMPDIR/CheckPipUpdates_code.XXXXXX"`
+CODEDIR=`mktemp -d "$TMPDIR/pip-requirements-checker_code.XXXXXX"`
 git clone --quiet -b "$BRANCH" "$GITSOURCE" "$CODEDIR"
 
 if [ ! -f "$CODEDIR/requirements.txt" ]
@@ -89,7 +89,7 @@ fi
 # =====================================================================
 #  Build a virtualenv based on it
 
-VENVDIR=`mktemp -d "$TMPDIR/CheckPipUpdates_venv.XXXXXX"`
+VENVDIR=`mktemp -d "$TMPDIR/pip-requirements-checker_venv.XXXXXX"`
 virtualenv --quiet "$VENVDIR"
 . "$VENVDIR/bin/activate"
 pip install --quiet -r "$CODEDIR/requirements.txt"
