@@ -30,6 +30,10 @@ Credits
 -------
 Python code for interfacing with pip based on https://gist.github.com/3555765
 
+History
+-------
+* Originally created by Alex Hewson (alex@payperks.com, https://github.com/alexmbird)
+
 
 License
 -------
