@@ -11,14 +11,15 @@ e.g.
 
 Usage
 -----
-`./CheckPipUpdates.sh [-b branch] <git uri>`
-`` 
-`Compare lib versions from a requirements.txt in a Python project in`
-`GitHub to latest available versions in PyPy`
-``
-`Options:`
-``
-`   -b <branch>   - use alternate branch; default is master`
-`   -h            - this help`
-``
-`Example: ./CheckPipUpdates.sh -b master git@github.com:payperks/py-alex-req-project.git`
+
+```./CheckPipUpdates.sh [-b branch] <git uri>
+
+Compare lib versions from a requirements.txt in a Python project in
+GitHub to latest available versions in PyPy
+
+Options:
+
+   -b <branch>   - use alternate branch; default is master
+   -h            - this help
+
+Example: ./CheckPipUpdates.sh -b master git@github.com:payperks/py-alex-req-project.git```
