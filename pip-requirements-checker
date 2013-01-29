@@ -2,7 +2,8 @@
 
 #
 # Get a copy of the codebase, create a virtualenv based on it and see if
-# any of the libraries are ready to be upgraded.
+# any of the libraries are ready to be upgraded.  Python code to interface
+# with pip based on https://gist.github.com/3555765.
 #
 # To work this needs to have a SSH id rsa trusted by github for deployment.
 # 

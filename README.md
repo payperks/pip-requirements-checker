@@ -26,8 +26,13 @@ Options:
 Example: pip-requirements-checker -b master git@github.com:payperks/pip-requirements-checker.git
 ```
 
-LICENSE
------
+Credits
+-------
+Python code for interfacing with pip based on https://gist.github.com/3555765
+
+
+License
+-------
 Copyright 2013 PayPerks, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
