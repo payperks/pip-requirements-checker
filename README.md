@@ -1,5 +1,8 @@
 pip-requirements-checker
 ========================
+
+NOTE: THIS IS NOT USED OR MAINTAINED ANYMORE.  USE AT YOUR OWN RISK.
+
 A simple bash+python script to read the requirements.txt in your Python project, generate a temporary virtualenv to match then check the package versions against PyPy to see if any are outdated.
 
 Best called as a weekly cron with the results piped into the mail command & shared with your whole development team.
